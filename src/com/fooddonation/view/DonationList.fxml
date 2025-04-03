@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.fooddonation.controller.DonationListController"
+            prefWidth="600" prefHeight="400">
+
+    <VBox spacing="10.0" layoutX="20.0" layoutY="20.0">
+        <HBox spacing="10">
+            <TextField fx:id="searchItemField" promptText="Search by Item Name" />
+            <DatePicker fx:id="searchDatePicker" />
+            <Button text="Search" onAction="#handleSearch" />
+            <Button text="Delete Selected Donation" onAction="#handleDeleteDonation" />
+            
+        </HBox>
+
+        <TableView fx:id="donationTable" prefHeight="350">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID" />
+                <TableColumn fx:id="donorColumn" text="Donor" />
+                <TableColumn fx:id="itemColumn" text="Item" />
+                <TableColumn fx:id="quantityColumn" text="Quantity" />
+                <TableColumn fx:id="dateColumn" text="Date" />
+            </columns>
+        </TableView>
+    </VBox>
+</AnchorPane>

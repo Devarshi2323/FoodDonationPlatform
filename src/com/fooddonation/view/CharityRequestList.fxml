@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.fooddonation.controller.CharityRequestListController"
+            prefWidth="800" prefHeight="500">
+
+    <TableView fx:id="requestTable" layoutX="20" layoutY="20" prefWidth="760" prefHeight="350">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID"/>
+            <TableColumn fx:id="emailColumn" text="Email"/>
+            <TableColumn fx:id="nameColumn" text="Name"/>
+            <TableColumn fx:id="itemColumn" text="Item"/>
+            <TableColumn fx:id="quantityColumn" text="Quantity"/>
+            <TableColumn fx:id="dateColumn" text="Date"/>
+            <TableColumn fx:id="statusColumn" text="Status"/>
+        </columns>
+    </TableView>
+
+    <ComboBox fx:id="statusBox" layoutX="20" layoutY="390" prefWidth="200"/>
+    <Button text="Update Status" layoutX="240" layoutY="390" onAction="#handleUpdateStatus"/>
+    <Label fx:id="messageLabel" layoutX="20" layoutY="430" textFill="green"/>
+
+</AnchorPane>
+

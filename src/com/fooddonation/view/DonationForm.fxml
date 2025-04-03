@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.fooddonation.controller.DonationFormController" prefWidth="400" prefHeight="300">
+    <VBox spacing="10.0" layoutX="30.0" layoutY="30.0">
+        <Label text="Make a Donation" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+        <TextField fx:id="donorNameField" promptText="Your Name" editable="false" />
+        <TextField fx:id="donorEmailField" promptText="Your Email" editable="false" />
+        <TextField fx:id="itemField" promptText="Item Name" />
+        <TextField fx:id="quantityField" promptText="Quantity" />
+        <Button text="Submit Donation" onAction="#handleSubmit" />
+        <Label fx:id="messageLabel" />
+    </VBox>
+</AnchorPane>
