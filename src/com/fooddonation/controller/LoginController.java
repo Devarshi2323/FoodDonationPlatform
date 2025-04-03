@@ -55,13 +55,13 @@ public class LoginController {
         }
 
         try (Connection conn = DBUtil.getConnection()) {
-            // ✅ Hash the entered password
+           
             String hashedPassword = DBUtil.hashPassword(password);
             
-            // ✅ Debug line to print the hashed password
+            // Debug line to print the hashed password
             //System.out.println("Hashed (entered) password: " + hashedPassword);
 
-            // ✅ Compare hashed password
+           
             String sql = "SELECT * FROM users WHERE email=? AND password_hash=? AND role=? AND status='Approved'";
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setString(1, email);
@@ -74,7 +74,7 @@ public class LoginController {
                 FXMLLoader loader = new FXMLLoader();
                 Parent root;
 
-                String fullName = rs.getString("name"); // ✅ Get name directly from query result
+                String fullName = rs.getString("name"); 
 
                 switch (role) {
                     case "Admin":

@@ -120,7 +120,7 @@ public class UserManagementController {
             stmt.setInt(2, selectedUser.getUserId());
             stmt.executeUpdate();
             messageLabel.setText("Status updated!");
-            loadUsers(); // refresh table
+            loadUsers(); 
         } catch (SQLException e) {
             messageLabel.setText("Failed to update status.");
             e.printStackTrace();

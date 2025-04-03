@@ -14,9 +14,9 @@ public class AdminDashboardController {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/fooddonation/view/DonationList.fxml"));
             Parent root = loader.load();
 
-            // Get the controller and call the load method
+            
             DonationListController controller = loader.getController();
-            controller.loadAllDonations(); // ✅ load all donations for admin
+            controller.loadAllDonations(); 
 
             Stage stage = new Stage();
             stage.setTitle("All Donations");

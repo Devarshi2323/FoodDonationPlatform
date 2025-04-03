@@ -29,7 +29,7 @@ public class CharityRequestFormController {
     private String staffEmail;
     private String staffName;
 
-    // ✅ Called after FXML is loaded, sets values safely
+    
     public void setStaffInfo(String email, String name) {
         this.staffEmail = email;
         this.staffName = name;

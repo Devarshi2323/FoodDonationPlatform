@@ -25,7 +25,7 @@ public class DonorDashboardController {
             Parent root = loader.load();
 
             DonationFormController controller = loader.getController();
-            controller.setDonorInfo(donorEmail, donorName);  // these should be set during login
+            controller.setDonorInfo(donorEmail, donorName);  
 
             Stage stage = new Stage();
             stage.setTitle("Make a Donation");

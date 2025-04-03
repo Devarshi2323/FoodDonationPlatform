@@ -92,7 +92,7 @@ public class CharityRequestListController {
             stmt.executeUpdate();
             messageLabel.setText("Status updated!");
 
-            loadCharityRequests(); // Refresh table
+            loadCharityRequests(); 
 
         } catch (Exception e) {
             messageLabel.setText("Update failed.");

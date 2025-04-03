@@ -17,7 +17,7 @@ public class DBUtil {
         return DriverManager.getConnection(URL, USER, PASS);
     }
 
-    // ✅ SHA-256 hashing for secure passwords
+    
     public static String hashPassword(String password) {
         try {
             MessageDigest md = MessageDigest.getInstance("SHA-256");
@@ -25,7 +25,7 @@ public class DBUtil {
 
             StringBuilder sb = new StringBuilder();
             for (byte b : hashBytes) {
-                sb.append(String.format("%02x", b)); // convert byte to hex
+                sb.append(String.format("%02x", b)); 
             }
             return sb.toString();
         } catch (NoSuchAlgorithmException e) {
