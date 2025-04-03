@@ -9,7 +9,7 @@ import javafx.scene.control.*;
 
 import java.sql.*;
 
-public class UserManagementController {
+public class UserManagementController  {
 
     @FXML private TableView<User> userTable;
     @FXML private TableColumn<User, Integer> idColumn;

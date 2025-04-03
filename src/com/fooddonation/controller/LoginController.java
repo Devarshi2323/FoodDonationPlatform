@@ -11,7 +11,7 @@ import com.fooddonation.utils.DBUtil;
 
 import java.sql.*;
 
-public class LoginController {
+public class LoginController  {
 
     @FXML
     private TextField emailField;

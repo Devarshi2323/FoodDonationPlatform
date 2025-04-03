@@ -6,7 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class AdminDashboardController {
+public class AdminDashboardController  {
 
     @FXML
     private void handleViewDonations() {

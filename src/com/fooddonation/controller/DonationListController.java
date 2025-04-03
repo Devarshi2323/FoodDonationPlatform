@@ -14,7 +14,7 @@ import java.sql.*;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
 
-public class DonationListController implements Initializable {
+public class DonationListController implements Initializable  {
 
     @FXML private TableView<Donation> donationTable;
     @FXML private TableColumn<Donation, Integer> idColumn;

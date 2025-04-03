@@ -7,7 +7,7 @@ import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-public class DBUtil {
+public class DBUtil  {
 
     private static final String URL = "jdbc:mysql://localhost:3306/food_donation";
     private static final String USER = "root";

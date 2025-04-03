@@ -9,7 +9,7 @@ import java.sql.PreparedStatement;
 import java.time.LocalDate;
 
 
-public class DonationFormController {
+public class DonationFormController  {
 
     @FXML private TextField donorNameField;
     @FXML private TextField donorEmailField;

@@ -6,7 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class CharityDashboardController {
+public class CharityDashboardController  {
 
 	private String currentStaffEmail;
 	private String currentStaffName;

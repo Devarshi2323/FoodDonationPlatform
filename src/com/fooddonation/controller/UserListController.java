@@ -15,7 +15,7 @@ import java.net.URL;
 import java.sql.*;
 import java.util.ResourceBundle;
 
-public class UserListController implements Initializable {
+public class UserListController implements Initializable  {
 
     @FXML private TableView<User> userTable;
     @FXML private TableColumn<User, Integer> idColumn;

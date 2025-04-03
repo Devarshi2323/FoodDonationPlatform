@@ -7,7 +7,7 @@ import javafx.scene.control.*;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
-public class RegistrationController {
+public class RegistrationController  {
 
     @FXML private TextField usernameField;
     @FXML private TextField emailField;

@@ -8,7 +8,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class ChangePasswordController {
+public class ChangePasswordController  {
 
     @FXML private PasswordField oldPasswordField;
     @FXML private PasswordField newPasswordField;

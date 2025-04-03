@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 import javafx.scene.image.Image;
 
 
-public class DonorDashboardController {
+public class DonorDashboardController  {
 
     private String donorEmail;
     private String donorName;

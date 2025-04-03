@@ -1,6 +1,6 @@
 package com.fooddonation.model;
 
-public class Donation {
+public class Donation  {
     private int donationId;
     private String donorName;
     private String donorEmail;

@@ -11,7 +11,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class CharityRequestListController {
+public class CharityRequestListController  {
 
     @FXML private TableView<CharityRequest> requestTable;
     @FXML private TableColumn<CharityRequest, Integer> idColumn;

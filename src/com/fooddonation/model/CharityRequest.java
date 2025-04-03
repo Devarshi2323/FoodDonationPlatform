@@ -2,7 +2,7 @@ package com.fooddonation.model;
 
 import javafx.beans.property.*;
 
-public class CharityRequest {
+public class CharityRequest  {
 
     private final IntegerProperty requestId;
     private final StringProperty staffEmail;
